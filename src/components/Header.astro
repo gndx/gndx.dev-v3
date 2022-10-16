@@ -23,12 +23,15 @@ const url = new URL(Astro.request.url);
 
 <header>
 	<div class="flex items-center">
-				<a
+		<a
 			href="/"
 			class="logo flex items-center"
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
-		<img src="https://s3.amazonaws.com/gndx.dev/gndx.png" class="w-16 rounded mr-8" />
+			<img
+				src="https://s3.amazonaws.com/gndx.dev/gndx.png"
+				class="w-16 rounded mr-8"
+			/>
 		</a>
 		<nav id="navigation-menu" aria-label="Main">
 			<a href="/" aria-current={url.pathname === "/" ? "page" : false}>🏠</a>
@@ -38,8 +41,15 @@ const url = new URL(Astro.request.url);
 			<a href="/blog" aria-current={url.pathname === "/blog" ? "page" : false}
 				>Artículos
 			</a>
-			<a href="/cursos" aria-current={url.pathname === "/blog" ? "page" : false}
+			<a
+				href="/cursos"
+				aria-current={url.pathname === "/cursos" ? "page" : false}
 				>Cursos
+			</a>
+			<a
+				href="/conferencias"
+				aria-current={url.pathname === "/conferencias" ? "page" : false}
+				>Conferencias
 			</a>
 		</nav>
 	</div>
