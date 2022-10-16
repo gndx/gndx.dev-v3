@@ -25,6 +25,9 @@
 		"url": "https://github.com/gndx/gndx.dev.git"
 	},
 	"private": false,
+	"engines": {
+		"node": "16.13.2"
+	},
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
