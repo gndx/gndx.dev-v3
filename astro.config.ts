@@ -13,7 +13,6 @@ export default defineConfig({
 		},
 	},
 	site: "https://gndx.dev",
-	base: "/gndx.dev",
 	integrations: [
 		mdx({}),
 		react(),
