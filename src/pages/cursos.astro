@@ -1,0 +1,29 @@
+---
+import PageLayout from "@/layouts/Base";
+import Courses from "src/components/Curses";
+
+const meta = {
+	title: "Cursos de Oscar Barajas @gndx",
+	description: "¿Quieres aprender JavaScript?",
+};
+---
+
+<PageLayout meta={meta}>
+	<div class="pt-8 pb-8 prose prose-sm prose-cactus max-w-none xl:col-span-2">
+		<h1 id="¿quién-soy">
+			<a href="#¿quién-soy" aria-hidden="true" tabindex="-1"
+				><span class="icon icon-link"></span>
+			</a>¿Quieres aprender JavaScript?
+		</h1>
+		<p>
+			Soy un apasionado por la educación, enseñar siempre ha sido un gusto para
+			mí, te dejo la lista de los cursos que tengo actualmente en Platzi. Si,
+			Quieres ver todos mis curso visita mi perfil en Platzi.
+		</p>
+		<p class="text-lg leading-7 text-gray-500">
+			💻 21 Cursos &nbsp;&nbsp;&nbsp; 💖 35,298 Opiniones &nbsp;&nbsp;&nbsp; 😀
+			86,913 Estudiantes
+		</p>
+		<Courses max={40} />
+	</div>
+</PageLayout>

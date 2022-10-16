@@ -1,0 +1,16 @@
+/* TEAM */
+	Chef:Oscar Barajas Tavares
+	Contact: oscar [at] gndx.dev
+	Twitter: @gndx
+	From:Sopo, Cundinamarca, Colombia.
+
+/* THANKS */
+	Template: Timothy Lin
+	Twitter: @timlrxx
+		
+
+/* SITE */
+	Last update: 2021/09/19
+	Language: Spanish
+	Doctype: NextJS
+	IDE: VSCode

@@ -1,0 +1,100 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+
+const url = new URL(Astro.request.url);
+---
+
+<script>
+	import { toggleClass } from "@/util";
+
+	document.addEventListener("DOMContentLoaded", () => {
+		const { body } = document;
+		const toggleMenuButton = document.getElementById("toggle-navigation-menu");
+		let menuOpen = false;
+
+		toggleMenuButton.addEventListener("click", () => {
+			toggleClass(body, "menu-open");
+			toggleClass(toggleMenuButton, "text-accent");
+			menuOpen = !menuOpen;
+			toggleMenuButton.setAttribute("aria-expanded", menuOpen.toString());
+		});
+	});
+</script>
+
+<header>
+	<div class="flex items-center">
+				<a
+			href="/"
+			class="logo flex items-center"
+			aria-current={url.pathname === "/" ? "page" : false}
+		>
+		<img src="https://s3.amazonaws.com/gndx.dev/gndx.png" class="w-16 rounded mr-8" />
+		</a>
+		<nav id="navigation-menu" aria-label="Main">
+			<a href="/" aria-current={url.pathname === "/" ? "page" : false}>🏠</a>
+			<a href="/about" aria-current={url.pathname === "/about" ? "page" : false}
+				>Acerca
+			</a>
+			<a href="/blog" aria-current={url.pathname === "/blog" ? "page" : false}
+				>Artículos
+			</a>
+			<a href="/cursos" aria-current={url.pathname === "/blog" ? "page" : false}
+				>Cursos
+			</a>
+		</nav>
+	</div>
+	<ThemeToggle />
+	<button
+		id="toggle-navigation-menu"
+		type="button"
+		aria-label="primary navigation"
+		aria-expanded="false"
+	>
+		<svg
+			fill="currentColor"
+			viewBox="0 0 20 20"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				fill-rule="evenodd"
+				d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+				clip-rule="evenodd"></path>
+		</svg>
+	</button>
+</header>
+
+<style>
+	header {
+		@apply relative z-50 mb-6 flex items-center;
+
+		#toggle-navigation-menu {
+			@apply ml-8 sm:invisible sm:hidden;
+
+			svg {
+				@apply h-6 w-6;
+			}
+		}
+
+		nav {
+			@apply mt-1 -ml-4 hidden text-accent sm:flex sm:divide-x sm:divide-dashed sm:divide-accent;
+
+			a {
+				@apply px-4 sm:hover:underline;
+			}
+		}
+
+		@media (max-width: 640px) {
+			:global(body.menu-open) & {
+				@apply relative z-50;
+
+				nav {
+					@apply absolute -inset-x-4 top-14 m-0 flex flex-col items-end gap-y-4 rounded-md bg-[color:var(--theme-menu-bg)] py-4 shadow backdrop-blur backdrop-filter;
+
+					a {
+						@apply p-4;
+					}
+				}
+			}
+		}
+	}
+</style>

@@ -1,0 +1,61 @@
+---
+import PageLayout from "@/layouts/Base";
+import BlogPostPreview from "@/components/BlogPostPreview";
+import SocialList from "@/components/SocialList";
+import YouTube from "../components/YouTube";
+import Conferences from "../components/Conferences";
+import { sortMDByDate } from "@/util";
+import type { Post } from "@/types";
+
+const meta = {
+	title: "Oscar Barajas Tavares @gndx",
+	description:
+		"Learning Engineer at @platzi - Microsoft MVP - Lead at Developer Circles from Meta, #JavaScript #React #Web3 #BTC #ETH - #Twitch Partner 🇲🇽 🇨🇴",
+};
+
+const MAX_POSTS = 15;
+const allPosts = await Astro.glob<Post>("./blog/*.mdx");
+const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
+---
+
+<PageLayout meta={meta}>
+	<section>
+		<h1 class="mb-2 title">{meta.title}</h1>
+		<div class="mb-2 flex items-center justify-between">
+			<p class="mr-8">{meta.description}</p>
+			<figure>
+				<img
+					class="rounded-lg w-48"
+					src="https://arepa.s3.amazonaws.com/oscar-barajas-gndx.png"
+					alt="Oscar Barajas Tavares"
+				/>
+			</figure>
+		</div>
+		<SocialList />
+	</section>
+	<section aria-label="Blog post list" class="mt-16">
+		<h2 class="mb-4 text-xl title">¿Hoy que aprenderás?</h2>
+		<ul class="space-y-4 sm:space-y-2">
+			{
+				allPostsByDate.map((p) => (
+					<li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full">
+						<BlogPostPreview post={p} as="h2" withDesc />
+					</li>
+				))
+			}
+		</ul>
+		<span class="block mt-4 sm:text-right">
+			<a
+				class="sm:hover:text-accent"
+				href="/blog"
+				aria-label="View all blog categories"
+			>
+				Ver todos →
+			</a>
+		</span>
+	</section>
+	<section class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 mt-12">
+		<YouTube />
+		<Conferences />
+	</section>
+</PageLayout>

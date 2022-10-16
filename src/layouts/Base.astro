@@ -1,0 +1,50 @@
+---
+import type { SiteMeta } from "@/types";
+import BaseHead from "@/components/BaseHead";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import SkipLink from "@/components/SkipLink";
+import siteMeta from "src/site-meta.config";
+
+export type Props = {
+	meta: SiteMeta;
+};
+
+const {
+	meta: { title, description, image },
+} = Astro.props as Props;
+---
+
+<html lang={siteMeta.lang}>
+	<head>
+		<BaseHead title={title} description={description} image={image} />
+		<script define:vars={{ siteMeta }}>
+			const root = document.documentElement;
+			const colorThemeMetaTag = document.querySelector(
+				"meta[name='theme-color']"
+			);
+			const theme =
+				typeof localStorage !== "undefined"
+					? localStorage.getItem("theme")
+					: null;
+			if (
+				theme === "dark" ||
+				(!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+			) {
+				root.classList.add("dark");
+				colorThemeMetaTag.setAttribute("content", siteMeta.themeColorDark);
+			} else {
+				root.classList.remove("dark");
+				colorThemeMetaTag.setAttribute("content", siteMeta.themeColorLight);
+			}
+		</script>
+	</head>
+	<body>
+		<SkipLink />
+		<Header />
+		<main id="main" class="flex-1">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

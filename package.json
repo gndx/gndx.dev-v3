@@ -1,0 +1,73 @@
+{
+	"name": "gndx-dev",
+	"version": "3.0.0",
+	"description": "A simple Blog powered by Astro",
+	"license": "MIT",
+	"author": {
+		"name": "GNDX"
+	},
+	"contributors": [
+		{
+			"name": "Oscar Barajas @gndx",
+			"email": "oscar@gndx.dev",
+			"url": "https://gndx.dev"
+		}
+	],
+	"keywords": [
+		"JavaScript",
+		"Astro",
+		"react",
+		"tailwindcss",
+		"typescript"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gndx/gndx.dev.git"
+	},
+	"private": false,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"format": "prettier -w ./src ./src/**/*.astro"
+	},
+	"devDependencies": {
+		"@astrojs/image": "^0.4.0",
+		"@astrojs/mdx": "^0.11.0",
+		"@astrojs/sitemap": "^1.0.0",
+		"@astrojs/tailwind": "^1.0.0",
+		"@tailwindcss/aspect-ratio": "^0.4.0",
+		"@tailwindcss/line-clamp": "^0.4.0",
+		"@tailwindcss/typography": "^0.5.4",
+		"@types/eslint": "^8.4.6",
+		"@types/prettier": "^2.7.0",
+		"@typescript-eslint/eslint-plugin": "^5.36.1",
+		"@typescript-eslint/parser": "^5.36.1",
+		"astro": "1.1.3",
+		"astro-eslint-parser": "^0.5.1",
+		"autoprefixer": "^10.4.8",
+		"eslint": "^8.23.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-import-resolver-typescript": "^3.5.0",
+		"eslint-plugin-astro": "^0.17.1",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-prettier": "^4.2.1",
+		"postcss": "^8.4.16",
+		"postcss-html": "^1.5.0",
+		"prettier": "^2.7.1",
+		"prettier-plugin-astro": "0.5.4",
+		"prettier-plugin-tailwindcss": "^0.1.13",
+		"stylelint": "^14.11.0",
+		"stylelint-config-prettier": "^9.0.3",
+		"stylelint-config-standard": "^28.0.0",
+		"tailwindcss": "^3.1.8",
+		"typescript": "^4.8.2"
+	},
+	"dependencies": {
+		"@astrojs/react": "^1.2.0",
+		"@heroicons/react": "^2.0.12",
+		"@types/react": "^18.0.21"
+	}
+}

@@ -1,0 +1,75 @@
+---
+layout: "@/layouts/BlogPost"title: "Instalar NVM en Ubuntu 20.04"
+description: Node Versión Manager (NVM) es una herramienta que nos permite administrar múltiples versiones de Node.js, aprende a instalarlo en WSL2 en Windows 11.
+publishDate: "2021-10-14T02:33:37.383Z"
+tags: [ubuntu, javascript, recursos]
+heroImage: https://arepa.s3.amazonaws.com/instalar-nvm-ubuntu-wsl2.png
+---
+
+**Node Versión Manager** (**NVM**) es una herramienta que nos permite administrar múltiples versiones de **Node.js**. Gracias a NVM podemos instalar las versiones más recientes de node.js incluido npm o instalar una versión especifica y poder cambiar entre versiones fácilmente desde la línea de comandos.
+
+Previamente aprendimos a [instalar WSL2 en Windows 11](https://gndx.dev/blog/instalar-wsl2-en-windows-11) ahora vamos a instalar Node.js por medio de NVM para trabajar nuestros proyectos construidos en JavaScript dentro de la configuración de Ubuntu 20.04 que instalamos con WSL2 en Windows 11.
+
+### Instalar NVM en Ubuntu 20.04
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+```
+
+Ahora vamos a activar la variable de entorno para NVM con el siguiente comando:
+
+```
+source ~/.bashrc
+```
+
+Ahora vamos a verificar que tengamos instalado NVM y funcionando.
+
+```
+nvm --version
+```
+
+### Instalar Node.js en su última versión
+
+```
+nvm install node
+```
+
+![instalar node.js en Ubuntu](https://arepa.s3.amazonaws.com/nvm-nodejs.png)
+
+Ahora comprobamos que tengamos Node.js y npm instalados.
+
+```
+node --version | npm --version
+```
+
+#### instalar una versión especifica de Node.js
+
+```
+nvm install 14.18.1 // Node LTS
+```
+
+#### Listar las versiones instaladas
+
+```
+nvm ls
+```
+
+#### Cambiar entre versiones de Node.js
+
+```
+nvm use 14.18.1 | 16.11.1
+```
+
+#### Eliminar una versión de Node.js
+
+```
+nvm uninstall 14.18.1
+```
+
+**NVM** nos permite instalar y administrar correctamente las versiones de Node.js que necesitemos para nuestros proyectos.
+
+![instalar nvm en Ubuntu](https://arepa.s3.amazonaws.com/ls-nvm.png)
+
+**Nota:** _Si estás trabajando con zsh o algún otro perfil en tu sistema operativo GNU/Linux debes de activar la variable de entorno de NVM._
+
+Más informacion en el repositorio de GitHub: [nvm-sh/nvm](https://github.com/nvm-sh/nvm)
