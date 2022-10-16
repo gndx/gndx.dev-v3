@@ -33,7 +33,7 @@
 	],
 	"screenshots": [
 		{
-			"src": "/screenshots/screen1.png",
+			"src": "/screenshots/screen.png",
 			"sizes": "1280x1280",
 			"type": "image/png",
 			"description": "Gndx.dev Home Screen"

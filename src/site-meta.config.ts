@@ -1,5 +1,5 @@
 const siteMeta = {
-	title: "Oscar Barajas Tavares @gndx",
+	title: "@gndx",
 	description:
 		"Learning Engineer at @platzi - Microsoft MVP - Lead at Developer Circles from Meta, #JavaScript #React #Web3 #BTC #ETH - #Twitch Partner 🇲🇽 🇨🇴",
 	lang: "es-ES",

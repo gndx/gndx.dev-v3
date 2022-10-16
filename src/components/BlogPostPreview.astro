@@ -13,7 +13,7 @@ const datetime = date.toISOString();
 const postDate = getLocaleTime(date, { month: "short" });
 ---
 
-<time {datetime} class="min-w-[120px] text-gray-500">{postDate}</time>
+<time {datetime} class="min-w-[120px] text-yellow-500">{postDate}</time>
 <Element>
 	<a href={post.url} class="inline-block cactus-link line-clamp-1">
 		{post.frontmatter.title}
@@ -21,6 +21,6 @@ const postDate = getLocaleTime(date, { month: "short" });
 </Element>
 {
 	withDesc && (
-		<q class="block italic line-clamp-3 mb-6">{post.frontmatter.description}</q>
+		<q class="mb-6 block italic line-clamp-3">{post.frontmatter.description}</q>
 	)
 }
