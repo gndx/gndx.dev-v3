@@ -14,7 +14,7 @@ const YouTube = () => {
 
 				<div className="relative bg-black bg-opacity-40 p-8 pt-32 text-white">
 					<h5 className="mt-2 text-2xl font-bold">Oscar Barajas @gndx</h5>
-					<p className="mt-2 text-sm text-gray-500">Último Video:</p>
+					<p className="mt-2 text-sm text-gray-400">Último Video:</p>
 					<p className="text-sm">
 						Desde la Historia a WEB3 | ¿Que es Web 3.0? ¿Cómo funciona?
 					</p>
