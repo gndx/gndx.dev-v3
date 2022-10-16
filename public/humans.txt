@@ -1,16 +1,15 @@
 /* TEAM */
-	Chef:Oscar Barajas Tavares
+	Chef: Oscar Barajas Tavares
 	Contact: oscar [at] gndx.dev
 	Twitter: @gndx
 	From:Sopo, Cundinamarca, Colombia.
 
 /* THANKS */
-	Template: Timothy Lin
-	Twitter: @timlrxx
-		
+	Template: astro-theme-cactus
+	GitHub: @chrismwilliams
 
 /* SITE */
-	Last update: 2021/09/19
+	Last update: 2022/10/15
 	Language: Spanish
-	Doctype: NextJS
+	Doctype: Astro
 	IDE: VSCode

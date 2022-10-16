@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gndx.dev/sitemap.xml
+Sitemap: https://gndx.dev/sitemap-0.xml
