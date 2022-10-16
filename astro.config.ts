@@ -12,7 +12,8 @@ export default defineConfig({
 			wrap: true,
 		},
 	},
-	site: "https://www.astro-theme-cactus.netlify.app",
+	site: "https://gndx.dev",
+	base: "/gndx.dev",
 	integrations: [
 		mdx({}),
 		react(),
