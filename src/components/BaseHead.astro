@@ -61,7 +61,7 @@ const ogImage = createOgImage({
 <meta name="theme-color" content="#ffffff" />
 
 <!-- Open Graph / Facebook -->
-<meta property="og:locale" content={siteMeta.ogLocale} />
+<meta property="og:locale" content="es_ES" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={title} />
@@ -70,7 +70,10 @@ const ogImage = createOgImage({
 <meta property="fb:app_id" content="285513459106600" />
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={ogImage} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+<meta name="twitter:image:alt" content={title} />
+<meta name="twitter:site" content="@gndx" />
+<meta name="twitter:creator" content="@gndx" />
