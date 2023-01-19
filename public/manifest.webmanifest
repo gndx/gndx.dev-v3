@@ -5,9 +5,9 @@
 	"display": "standalone",
 	"scope": "/",
 	"start_url": "/",
-	"name": "Oscar Barajas Tavares",
-	"short_name": "gndx.dev",
-	"description": "Learning Engineer at Platzi - Microsoft MVP - Lead at Developer Circles from Meta, I teach React & Svelte - #Web3 #BTC #ETH - #Twitch Partner - 🇲🇽 🇨🇴",
+	"name": "Antonio Feregrino Bolaños",
+	"short_name": "feregri.no",
+	"description": "Machine Learning Engineer at Simply Business – Data+Software – Edutuber – Interesado en Machine Learning en producción, andar en bicicleta, el futuro sin trabajo y Lego 🇲🇽 🇬🇧",
 	"icons": [
 		{
 			"src": "/icon-192x192.png",
