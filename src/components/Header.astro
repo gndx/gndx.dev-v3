@@ -42,17 +42,12 @@ const url = new URL(Astro.request.url);
 				>Acerca
 			</a>
 			<a href="/blog" aria-current={url.pathname === "/blog" ? "page" : false}
-				>Artículos
+				>Blog
 			</a>
 			<a
-				href="/cursos"
-				aria-current={url.pathname === "/cursos" ? "page" : false}
-				>Cursos
-			</a>
-			<a
-				href="/tags/conferencias"
-				aria-current={url.pathname === "/conferencias" ? "page" : false}
-				>Conferencias
+				href="/colaboraciones"
+				aria-current={url.pathname === "/colaboraciones" ? "page" : false}
+				>Colaboraciones
 			</a>
 		</nav>
 	</div>
