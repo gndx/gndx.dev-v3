@@ -12,7 +12,7 @@ export default defineConfig({
 			wrap: true,
 		},
 	},
-	site: "https://gndx.dev",
+	site: "https://feregri.no",
 	integrations: [
 		mdx({}),
 		react(),
