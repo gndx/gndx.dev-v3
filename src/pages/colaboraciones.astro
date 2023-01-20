@@ -1,0 +1,24 @@
+---
+import PageLayout from "@/layouts/Base";
+import Collaborations from "src/components/Collaborations";
+
+const meta = {
+	title: "Colaboraciones de Antonio Feregrino",
+	description: "¿Quieres aprender JavaScript?",
+};
+---
+
+<PageLayout meta={meta}>
+	<div class="pt-8 pb-8 prose prose-sm prose-cactus max-w-none xl:col-span-2">
+		<h1 id="¿quién-soy">
+			<a href="#¿quién-soy" aria-hidden="true" tabindex="-1"
+				><span class="icon icon-link"></span>
+			</a>Charlas, entrevistas y conferencias
+		</h1>
+		<p>
+			Me gusta colaborar con otras personas y participar en conferencias – si quieres
+			platicar conmigo o hacer una colaboración, <a href="mailto:feregrino@thatcsharpguy.com">mándame un mail.</a>
+		</p>
+		<Collaborations max={40} />
+	</div>
+</PageLayout>

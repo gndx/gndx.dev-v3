@@ -1,7 +1,7 @@
 const siteMeta = {
-	title: "@gndx",
+	title: "@feregri_no",
 	description:
-		"Learning Engineer at @platzi - Microsoft MVP - Lead at Developer Circles from Meta, #JavaScript #React #Web3 #BTC #ETH - #Twitch Partner 🇲🇽 🇨🇴",
+		"Machine Learning Engineer at Simply Business – Data+Software – Edutuber – Interesado en Machine Learning en producción, andar en bicicleta, el futuro sin trabajo y Lego 🇲🇽 🇬🇧",
 	lang: "es-ES",
 	ogLocale: "es_ES",
 	githubUrl: "https://github.com/gndx/gndx.dev",

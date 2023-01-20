@@ -1,4 +1,4 @@
-/* TEAM */
+/* THEME */
 	Chef: Oscar Barajas Tavares
 	Contact: oscar [at] gndx.dev
 	Twitter: @gndx
