@@ -22,3 +22,6 @@ pnpm-debug.log*
 # misc
 *.pem
 .cache
+
+# Python
+.venv/

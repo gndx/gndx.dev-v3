@@ -1,0 +1,11 @@
+const youtubeData = [
+{% for video in videos %}
+    {
+        title: "{{ video.title }}",
+        thumbnail: "{{ video.thumbnail }}",
+        url: "{{ video.url }}",
+        description: "{{ video.description }}",
+    },{% endfor %}
+];
+
+export default youtubeData;
