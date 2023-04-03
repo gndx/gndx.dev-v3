@@ -48,7 +48,7 @@ const paginationProps = {
 			<ul class="text-left space-y-8">
 				{
 					page.data.map((p) => (
-						<li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full">
+						<li class="[&_q]:w-full flex flex-wrap items-center gap-x-2">
 							<BlogPostPreview post={p} as="h2" withDesc />
 						</li>
 					))
@@ -65,11 +65,11 @@ const paginationProps = {
 							xmlns="http://www.w3.org/2000/svg"
 							class="h-6 w-6"
 							viewBox="0 0 24 24"
-							stroke-width="1.5"
+							strokeWidth="1.5"
 							stroke="currentColor"
 							fill="none"
-							stroke-linecap="round"
-							stroke-linejoin="round"
+							strokeLinecap="round"
+							strokeLinejoin="round"
 						>
 							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 							<path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z" />
@@ -78,11 +78,11 @@ const paginationProps = {
 						</svg>
 						Tags
 					</h2>
-					<ul class="flex flex-wrap gap-2 text-bgColor">
+					<ul class="text-bgColor flex flex-wrap gap-2">
 						{allTags.map((tag) => (
 							<li>
 								<a
-									class="flex items-center justify-center rounded-lg bg-accent p-1"
+									class="bg-accent flex items-center justify-center rounded-lg p-1"
 									href={`/tags/${tag}`}
 									aria-label={`View all posts with the tag: ${tag}`}
 								>
