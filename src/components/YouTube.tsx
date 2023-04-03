@@ -6,7 +6,7 @@ const YouTube = () => {
 			<a
 				href="https://www.youtube.com/channel/UCw05fUBPwmpu-ehXFMqfdMw?sub_confirmation=1"
 				target={"_blank"}
-				className="relative block overflow-hidden rounded-xl bg-[url(https://arepa.s3.amazonaws.com/oscar-barajas-gndx.png)] bg-cover bg-center bg-no-repeat"
+				className="relative block overflow-hidden rounded-xl bg-[url(https://arepa.s3.amazonaws.com/oscar-barajas--tavares-gndx.png)] bg-cover bg-center bg-no-repeat"
 			>
 				<span className="absolute right-4 top-4 z-10 inline-flex items-center rounded-xl bg-red-600 px-4 py-2 text-xs font-semibold text-white">
 					<PlayIcon className="ml-1.5 h-6 w-6 text-white" />

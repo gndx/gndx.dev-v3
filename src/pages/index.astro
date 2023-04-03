@@ -26,7 +26,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 			<figure>
 				<img
 					class="rounded-lg w-48"
-					src="https://arepa.s3.amazonaws.com/oscar-barajas-gndx.png"
+					src="https://arepa.s3.amazonaws.com/oscar-barajas--tavares-gndx.png"
 					alt="Oscar Barajas Tavares"
 					width="48"
 					height="48"
@@ -40,7 +40,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 		<ul class="space-y-4 sm:space-y-2">
 			{
 				allPostsByDate.map((p) => (
-					<li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full">
+					<li class="[&_q]:w-full flex flex-wrap items-center gap-x-2">
 						<BlogPostPreview post={p} as="h2" withDesc />
 					</li>
 				))
